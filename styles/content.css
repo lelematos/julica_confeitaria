@@ -1,0 +1,404 @@
+.container-main {
+    min-height: 100%;
+    width: 100vw;
+
+    position: relative;
+}
+
+.container-hero {
+    background: url("../imagens/92859689_1301833016685326_128598181440967840_n_.jpg") no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    min-height: 97vh;
+
+    position: relative;
+
+    margin: 0 auto;
+}
+
+.btn-hero {
+    position: absolute;
+    top: 65vh;
+    justify-content: space-around;
+    left: calc(50% - 122.3px);
+}
+
+/* transition */
+
+.transition {
+    position: absolute;
+
+    background: url("../imagens/transition.png") no-repeat;
+    background-size: cover;
+
+    top: 85vh;
+    width: 100%;
+    height: 305px;
+    left: -15px;
+
+    z-index: 4;
+}
+
+/* hiddable cardapio */
+.hidden {
+    display: none !important;
+}
+
+.next-page-icon {
+    position: absolute;
+    right: 4vw;
+    z-index: 100;
+    left: auto;
+
+    top: 50%;
+}
+
+.previous-page-icon {
+    position: absolute;
+    left: 4vw;
+    right: auto;
+    z-index: 100;
+
+    top: 50%;
+}
+
+.previous-page-icon a,
+.next-page-icon a {
+    height: 100%;
+    width: 20px;
+    padding: 100px 40px;
+}
+
+.close-page-icon {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+
+    padding: 10px;
+
+}
+
+.container-cardapio {
+    width: 100vw;
+    height: 850px;
+
+    background-color: #FFDECE;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cardapio-header {
+    width: 100vw;
+    height: 10%;
+
+    background-color: #FFD3BD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardapio-content {
+    width: 100vw;
+    height: 90%;
+}
+
+.cardapio-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardapio-items li {
+    margin-left: 50px;
+}
+
+.cardapio-item {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: var(--laranja-julica);
+}
+
+.cardapio-item:hover {
+    color: var(--dark-purple);
+}
+
+.item-ativo .cardapio-item {
+    color: white;
+}
+
+.item-ativo {
+    padding: 17px 20px;
+
+    background-color: var(--dark-purple);
+
+    border-bottom: 8px solid var(--laranja-julica);
+}
+
+.expositores-cardapio {
+    display: none;
+    flex-direction: row;
+
+    height: 90%;
+
+    padding: 30px 50px;
+}
+
+.selecionado {
+    display: flex;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    display: none;
+}
+
+.pagina-atual {
+    display: inherit;
+}
+
+.item-card {
+    margin: 40px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-card-img {
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+}
+
+.card-img {
+    width: 300px;
+}
+
+.item-card-title h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.item-card-price {
+    margin: 5px 0;
+
+    padding: 5px;
+
+    background-color: red;
+    border-radius: 10px;
+
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* content */
+
+.section-1 {
+    z-index: 4;
+    position: relative;
+    background-color: #FB925B;
+}
+
+.container-sec-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 50px;
+}
+
+.sec-title {
+    padding: 40px 0 20px 0;
+}
+
+.row-images-parallax {
+    background: url("../imagens/par_2.png");
+    background-attachment: fixed;
+
+    position: relative;
+    left: 0;
+    z-index: 15;
+
+    width: 100vw;
+    height: 441px;
+
+    overflow: hidden;
+}
+
+/* expansive menus */
+
+.container-sec-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-sec-2 .sec-title h1 {
+    font-size: 4rem;
+}
+
+
+.side-by-side-text {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.side-by-side-text li {
+    margin: 5px 20px;
+}
+
+.side-by-side-text li p {
+    font-size: 1.6rem;
+}
+
+.mini-cardapio-container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FFDECE;
+
+    width: 100%;
+    height: 500px;
+
+    margin-top: 50px;
+}
+
+.side-menu {
+
+    background-color: #FFD3BD;
+    position: absolute;
+    right: 0px;
+    width: 30vw;
+    height: 500px;
+}
+
+.side-menu-items {
+    padding: 10px 40px;
+}
+
+.side-menu-items.ativo {
+    background-color: var(--dark-purple);
+    border-left: 7px solid var(--laranja-julica);
+}
+
+.side-menu-items.ativo a {
+    color: white;
+}
+
+.side-menu-items.ativo a:hover {
+    font-size: 3.6rem;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.side-menu-text {
+    font-size: 3.6rem;
+
+    color: var(--laranja-julica);
+}
+
+.side-menu-text:hover {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: lowercase;
+
+    color: var(--dark-purple);
+}
+
+
+.expositor-de-imagens {
+    width: 67.5vw;
+    height: 450px;
+    position: relative;
+    left: 1.2vw;
+    margin-top: 20px;
+    display: none;
+}
+
+.e-1 {
+    background: url('../imagens/m1.png');
+    background-size: cover;
+}
+
+.e-2 {
+    background: url('../imagens/b2.jpg');
+    background-size: cover;
+}
+
+.e-3 {
+    background: url('../imagens/t3.jpg');
+    background-size: cover;
+}
+
+.e-4 {
+    background: url('../imagens/docinhos_p.png');
+    background-size: cover;
+}
+
+.visivel {
+    display: inherit !important;
+}
+
+
+/* about me */
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 120px;
+}
+
+.about-me-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 50px;
+}
+
+.about-me-title {
+    font-size: 3.8rem;
+    color: var(--cor-de-fundo);
+
+    text-align: center;
+
+    width: 300px;
+    line-height: 60px;
+
+    background-color: var(--dark-purple);
+}
+
+.btn-about-me {
+    border: 3px solid var(--dark-purple);
+    padding: 25px 80px;
+
+    margin-top: 10px;
+}
+
+.about-me-img img {
+    border-radius: 25px;
+    width: 30vw;
+}

@@ -1,0 +1,122 @@
+:root {
+    --cor-de-fundo: #FFF5F0;
+    --laranja-julica: #FB925B;
+    --dark-purple: #3B1F2B;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    min-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    min-height: 100%;
+    width: 100vw;
+
+    background-color: var(--cor-de-fundo);
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+p {
+    word-break: break-all;
+    padding: 20px 0;
+    font-size: 1.8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    z-index: 4;
+    position: relative;
+
+}
+
+.invisible,
+.close {
+    visibility: hidden;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* grid limitation */
+
+.container-grid {
+    max-width: 65vw;
+    margin: 0 auto;
+
+    overflow-x: hidden;
+}
+
+
+
+/*  botoes  */
+
+.primary-button {
+    display: inline-flex;
+    font-size: 2rem;
+    letter-spacing: 0.005rem;
+    padding: 25px 50px;
+    border-radius: 4px;
+    color: #3B1F2B;
+
+    text-transform: uppercase;
+}
+
+.btn-white {
+    background: white;
+    /* border: 0.02rem solid white; */
+}
+
+.primary-button:hover {
+    background: #3B1F2B;
+    color: white;
+}
+
+
+/* textos */
+
+.title-of-section {
+    font-size: 6rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* footer */
+
+.footer {
+    background: url('../imagens/footer.png') no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 200px;
+
+    margin-top: 100px;
+}
+
+.logo-footer {
+    position: relative;
+    top: 45px;
+    margin-left: 120px;
+    height: 60%;
+}

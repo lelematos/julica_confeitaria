@@ -1,0 +1,134 @@
+.container-navbar {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.colored {
+    background-color: var(--cor-de-fundo);
+}
+
+/* drawer */
+
+.container-drawer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 40px 40px 40px;
+    z-index: 11;
+}
+
+.drawer-icon {
+    margin-bottom: 20px;
+    position: fixed;
+
+    align-self: center;
+}
+
+.x-icon {
+    margin-bottom: 20px;
+    position: fixed;
+}
+
+.drawer-content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    background-color: var(--cor-de-fundo);
+
+    padding-left: 40px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.drawer {
+    margin-top: 60px;
+}
+
+.drawer-items {
+    color: var(--laranja-julica);
+
+    font-size: 5rem;
+}
+
+.drawer-items:hover {
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: lowercase;
+
+    color: var(--dark-purple);
+}
+
+.container-imgs {
+    display: flex;
+    flex-direction: row;
+}
+
+.drawer-images {
+    margin-top: 60px;
+
+    /* width: 445px; */
+    height: 475px;
+}
+
+/* menu items */
+
+.container-visible-items {
+    margin-left: 40px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.container-visible-items li {
+    width: 11vw;
+}
+
+.visible-items {
+    font-size: 2rem;
+    display: inline;
+}
+
+/* cor padrao para os itens */
+.light {
+    color: white;
+}
+
+.laranja {
+    color: var(--laranja-julica);
+}
+
+/* logo position */
+
+.container-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 72.116px);
+    z-index: 15;
+}
+
+.logo-img {
+    height: 65px;
+
+}
