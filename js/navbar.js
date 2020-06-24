@@ -83,16 +83,6 @@ changeColorAccordingToPosition()
 
 dropdown_btn.onclick = () => {
     openNavMenu()
-    // drawer_div.classList.remove('close');
-    // dropdown_btn.classList.add('invisible');
-    // close_btn.classList.remove('invisible');
-
-    // if (Array.from(navbar_background_div.classList).includes('transparent')) {
-    //     ChangeColors_FromTo(navbar_background_div, 'transparent', 'colored');
-
-    //     WhiteToOrangeMenuItems()
-    // }
-
 }
 
 close_btn.onclick = () => {
@@ -136,33 +126,15 @@ const routineNavLinkChangingPageOfCardapio = (index, target_section) => {
 
 
 link_kits.onclick = () => {
-    // closeNavMenu()
-    // ifCardapioIsHiddenThenShow()
-    // if (parseInt(document.querySelectorAll('.item-ativo')[0].id) !== 0) {
-    //     changeCategoryAndPage(0)
-    // }
-    // sec_cardapio.scrollIntoView(false)
     routineNavLinkChangingPageOfCardapio(0, sec_cardapio)
 }
 link_bolos.onclick = () => {
-    // closeNavMenu()
-    // ifCardapioIsHiddenThenShow()
-    // changeCategoryAndPage(1)
-    // sec_cardapio.scrollIntoView(false)
     routineNavLinkChangingPageOfCardapio(1, sec_cardapio)
 }
 link_tortas.onclick = () => {
-    // closeNavMenu()
-    // ifCardapioIsHiddenThenShow()
-    // changeCategoryAndPage(2)
-    // sec_cardapio.scrollIntoView(false)
     routineNavLinkChangingPageOfCardapio(2, sec_cardapio)
 }
 link_doces.onclick = () => {
-    // closeNavMenu()
-    // ifCardapioIsHiddenThenShow()
-    // changeCategoryAndPage(3)
-    // sec_cardapio.scrollIntoView(false)
     routineNavLinkChangingPageOfCardapio(3, sec_cardapio)
 }
 link_about.onclick = () => {

@@ -66,6 +66,17 @@ const changeGroupOfImages_fromTo_forCardapio = (id_from, id_to) => {
 
     changeTheDisplayedPage(id_selecao_from, id_selecao_to, 0, 0)
 
+    //tratando 'pagina-atual' from para que no retorno para esta pagina, não fique com mais de uma atual
+    let pagina_atual_from = document.querySelectorAll(`.expositores-cardapio[name='${id_selecao_to}'] .pagina-atual`)
+    console.log(pagina_atual_from)
+    if (pagina_atual_from.length > 1) {
+        for (var i = 1; i < pagina_atual_from.length; i++) {
+            console.log(pagina_atual_from[i])
+
+            pagina_atual_from[i].classList.remove('pagina-atual')
+        }
+    }
+
     opacityToZero(from_imgs, 'selecionado')
     opacityTo_100(to_imgs, 'selecionado')
 }
