@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Julica Confeitaria Artesanal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://jquery-textfill.github.io/js/textfill/jquery.textfill.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/content.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="container-navbar transparent">
+            <div class="container-drawer">
+                <div class="icons">
+                    <a href="#!" class='drawer-icon-clicable'>
+                        <svg class='drawer-icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.244 18.4273L24 20.8854L23.352 21.1886C19.7297 22.9482 15.8871 23.8999 12 24C7.88097 23.8826 3.81396 22.827 0 20.8854L0.756 18.4273L1.37016 18.7145C4.76128 20.368 8.35931 21.266 12 21.3675C15.8605 21.2487 19.671 20.2523 23.244 18.4273ZM12 2.94046C8.13953 2.82159 4.32898 1.82508 0.756 0L0 2.45804C3.81396 4.39968 7.88097 5.45528 12 5.57266C16.119 5.45528 20.186 4.39968 24 2.45804L23.244 0C19.671 1.82508 15.8605 2.82159 12 2.94046ZM12 12.1541C8.35939 12.0526 4.76144 11.1546 1.3704 9.50115L0.756 9.21367L0 11.6711C3.81396 13.6128 7.88097 14.6684 12 14.7857C15.8871 14.6856 19.7297 13.7339 23.352 11.9743L24 11.6711L23.244 9.21307C19.671 11.0383 15.8605 12.0349 12 12.1538V12.1541Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                    <a href="#!" class='x-icon-clicable'>
+                        <svg class='x-icon' width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5 1.7667L11.2668 10.0005L19.5 18.2333L18.2333 19.5L10 11.267L1.7667 19.5L0.5 18.2333L8.733 10.0005L0.5 1.7667L1.7667 0.5L10 8.7332L18.2333 0.5L19.5 1.7667Z"
+                                fill="#FB925B" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="drawer-content">
+                    <ul class="drawer">
+                        <li><a href='#!' class="drawer-items kits-link">Kits personalizados</a></li>
+                        <li><a href='#!' class="drawer-items bolos-link">Bolos</a></li>
+                        <li><a href='#!' class="drawer-items tortas-link">Tortas</a></li>
+                        <li><a href='#!' class="drawer-items doces-link">Doces</a></li>
+                        <li><a href='#!' class="drawer-items about-link">Sobre Mim</a></li>
+                        <li><a href='#!' class="drawer-items depoimentos-link">Depoimentos</a></li>
+                    </ul>
+                    <div class="container-imgs">
+                        <img src="imagens/89121087_137628491123751_278155715112052360_n.jpg" alt=""
+                            class="drawer-images">
+                        <img src="imagens/82646782_190499835368773_3071692700984210423_n.jpg" alt=""
+                            class="drawer-images">
+                    </div>
+                </div>
+            </div>
+
+            <ul class="container-visible-items">
+                <li><a href='#!' class="visible-items">Sobre Mim</a></li>
+            </ul>
+            <div class="container-logo">
+                <a href="#!" class="logo-link"><img src="imagens/logo.png" alt="logo da julica" class="logo-img"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-main">
+        <section>
+            <div class="container-hero">
+                <a href="#!" class="primary-button btn-white btn-hero">
+                    Ver Cardápio
+                </a>
+            </div>
+        </section>
+
+        <div class="transition">
+
+        </div>
+
+        <section class='hiddable-cardapio hidden'>
+            <div class="container-cardapio">
+                <div class="cardapio-header">
+                    <ul class="cardapio-items">
+                        <li id='0' class='cardapio-item-container item-ativo'>
+                            <a href="#!" class="cardapio-item">Kits personalizados</a>
+                        </li>
+                        <li id='1' class='cardapio-item-container'>
+                            <a href="#!" class="cardapio-item">Bolos</a>
+                        </li>
+                        <li id='2' class='cardapio-item-container'>
+                            <a href="#!" class="cardapio-item">Tortas</a>
+                        </li>
+                        <li id='3' class='cardapio-item-container'>
+                            <a href="#!" class="cardapio-item">Doces</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cardapio-content">
+                    <div name='0' class="expositores-cardapio selecionado">
+                        <div page='0' class="page page-0 pagina-atual">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de dia dos namorados</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$22,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de natal</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$50,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de aniversario</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$2,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k4.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de festa junina</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$515,00
+                                </div>
+                            </div>
+                        </div>
+
+                        <div page='1' class="page page-1">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k4.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de dia dos namorados</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$22,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de natal</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$50,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de aniversario</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$2,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/k1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Kit de festa junina</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$515,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div name='1' class="expositores-cardapio">
+                        <div page='0' class="page page-0 pagina-atual">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo 1</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$35,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$105,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo 1</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$35,00
+                                </div>
+                            </div>
+                        </div>
+
+                        <div page='1' class="page page-1">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo de banana</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$105,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo 1</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$35,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/b3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Bolo de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div name='2' class="expositores-cardapio">
+                        <div page='0' class="page page-0 pagina-atual">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t5.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta de chocolate</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$12,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$105,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta das galaxia</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta reta</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$45,00
+                                </div>
+                            </div>
+                        </div>
+
+                        <div page='1' class="page page-1">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t4.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta torta</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta reta</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$45,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$105,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/t3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Torta das galaxia</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div name='3' class="expositores-cardapio">
+                        <div page='0' class="page page-0 pagina-atual">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$35,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de limao</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$105,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d4.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de abacaxi</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$35,00
+                                </div>
+                            </div>
+                        </div>
+
+                        <div page='1' class="page page-1">
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d3.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de chocolate</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d2.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de banana</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$105,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d4.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de baunilha</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$35,00
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="item-card-img">
+                                    <img class='card-img' src="imagens/d1.jpg" alt="">
+                                </div>
+                                <div class="item-card-title">
+                                    <h1>Doce de morango</h1>
+                                </div>
+                                <div class="item-card-price">
+                                    R$55,00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="next-page-icon">
+                        <a href="#!">
+                            <svg class="bi bi-caret-right-fill" width="4em" height="4em" viewBox="0 0 16 16"
+                                fill="#3B1F2B" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="previous-page-icon">
+                        <a href="#!">
+                            <svg class="bi bi-caret-left-fill" width="4em" height="4em" viewBox="0 0 16 16"
+                                fill="#3B1F2B" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="close-page-icon">
+                    <a href="#!">
+                        <svg class="bi bi-x" width="4em" height="4em" viewBox="0 0 16 16" fill="#3B1F2B"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                            <path fill-rule="evenodd"
+                                d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class='section-1'>
+            <div class="container-grid">
+                <div class="container-sec-1">
+                    <div class="sec-title">
+                        <h1 class='title-of-section'>
+                            uma combinação de ingredientes de qualidade com sabor.
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nulla eveniet dicta ea odio
+                            suscipit sed sunt laborum ipsam hic incidunt possimus quos explicabo architecto quibusdam,
+                            ut,
+                            nemo deleniti? Incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                            laudantium accusamus quibusdam impedit quo fuga ullam, veritatis assumenda aliquid quas
+                            soluta alias dolores tempora hic quis esse perspiciatis harum modi!Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Libero, nulla eveniet dicta ea odio
+                            suscipit sed sunt laborum ipsam hic incidunt possimus quos explicabo architecto quibusdam,
+                            ut,
+                            nemo deleniti? Incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                            laudantium accusamus quibusdam impedit quo fuga ullam, veritatis assumenda aliquid quas
+                            soluta alias dolores tempora hic quis esse perspiciatis harum modi!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-images-parallax">
+                <div class="imgs-filter">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-grid">
+                <div class="container-sec-2">
+                    <div class="sec-title">
+                        <h1 class='title-of-section'>
+                            uma combinação de ingredientes de qualidade com sabor.
+                        </h1>
+                        <ul class='side-by-side-text'>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nulla eveniet dicta
+                                    ea
+                                    odio
+                                    suscipit sed sunt laborum ipsam hic incidunt possimus quos explicabo architecto
+                                    quibusdam,
+                                    ut,
+                                    nemo deleniti? Incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Rerum
+                                    laudantium accusamus quibusdam impedit quo fuga ullam, veritatis assumenda aliquid
+                                    quas
+                                    soluta alias dolores tempora hic quis esse </p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nulla eveniet dicta
+                                    ea
+                                    odio
+                                    suscipit sed sunt laborum ipsam hic incidunt possimus quos explicabo architecto
+                                    quibusdam,
+                                    ut,
+                                    nemo deleniti? Incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Rerum
+                                    laudantium accusamus quibusdam impedit quo fuga ullam, veritatis assumenda aliquid
+                                    quas
+                                    soluta alias dolores tempora hic quis esse </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='mini-cardapio-container'>
+                <div class="side-menu">
+                    <ul class='side-menu-list'>
+                        <li id='0' class="side-menu-items ativo">
+                            <a href="#!" class="side-menu-text "> Kits Personalizados</a>
+                        </li>
+                        <li id='1' class="side-menu-items">
+                            <a href="#!" class="side-menu-text"> Bolos</a>
+                        </li>
+                        <li id='2' class="side-menu-items">
+                            <a href="#!" class="side-menu-text"> Tortas</a>
+                        </li>
+                        <li id='3' class="side-menu-items">
+                            <a href="#!" class="side-menu-text"> Doces</a>
+                        </li>
+                    </ul>
+                </div>
+                <div name='0' class="expositor-de-imagens e-1 visivel">
+
+                </div>
+                <div name='1' class="expositor-de-imagens e-2">
+
+                </div>
+                <div name='2' class="expositor-de-imagens e-3">
+
+                </div>
+                <div name='3' class="expositor-de-imagens e-4">
+
+                </div>
+            </div>
+        </section>
+        <section class='about-me-sec'>
+            <div class="container-grid">
+                <div class="about-me">
+                    <div class="about-me-left">
+                        <h1 class="about-me-title">
+                            Sobre Mim
+                        </h1>
+                        <p class="about-me-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam earum culpa sint aut,
+                            deserunt, debitis magnam repellat nobis corporis molestiae. Sunt repudiandae id saepe vel
+                            libero animi fugiat ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                            delectus accusantium hic quis quibusdam laborum libero eius accusamus architecto dicta,
+                            nostrum qui non vitae aperiam a sed minima iusto rerum?Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Dicta, totam earum culpa sint aut,
+                            deserunt, debitis magnam repellat nobis corporis molestiae. Sunt repudiandae id saepe vel
+                            libero animi fugiat ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                            delectus accusantium hic quis quibusdam laborum libero eius accusamus architecto dicta,
+                            nostrum qui non vitae aperiam a sed minima iusto rerum?Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Dicta, totam earum culpa sint aut,
+                            deserunt, debitis magnam repellat nobis corporis molestiae. Sunt repudiandae id saepe vel
+                            libero animi fugiat ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                        </p>
+                        <a href="#!" class="primary-button btn-white btn-about-me">Ver mais</a>
+                    </div>
+                    <div class="about-me-img">
+                        <img src="imagens/82378771_636596460214144_8201159220621048693_n.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <img class='logo-footer' src="imagens/logo.png" alt="">
+            </div>
+        </footer>
+    </div>
+
+
+    <script src='js/navbar.js'></script>
+    <script src='js/mini-cardapio.js'></script>
+    <script src='js/cardapio.js'></script>
+    <!-- <script src='/js/content.js'></script> -->
+
+</body>
+
+</html>

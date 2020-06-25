@@ -3,6 +3,7 @@ var dropdown_btn = document.querySelector('.drawer-icon-clicable');
 var close_btn = document.querySelector('.x-icon-clicable');
 var navbar_background_div = document.querySelector('.container-navbar');
 var visible_menu_items = document.querySelectorAll('.visible-items');
+var logo = document.querySelector('.logo-img');
 
 var initial_state = Array.from(navbar_background_div.classList);
 
@@ -41,11 +42,13 @@ const OrangeToWhiteMenuItems = () => {
     for (var i = 0; i < visible_menu_items.length; i++) {
         ChangeColors_FromTo(visible_menu_items[i], 'laranja', 'light');
     }
+    logo.setAttribute('src', "imagens/Logo-Julica branco.svg");
 }
 const WhiteToOrangeMenuItems = () => {
     for (var i = 0; i < visible_menu_items.length; i++) {
         ChangeColors_FromTo(visible_menu_items[i], 'light', 'laranja');
     }
+    logo.setAttribute('src', "imagens/Logo-Julica.svg");
 }
 
 const openNavMenu = () => {

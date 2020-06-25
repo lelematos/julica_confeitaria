@@ -23,8 +23,14 @@ html {
 body {
     min-height: 100%;
     width: 100vw;
+    overflow-x: hidden;
+
 
     background-color: var(--cor-de-fundo);
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
 
 a {
@@ -55,6 +61,18 @@ section {
 
 .fixed {
     position: fixed;
+}
+
+.nao-selecionavel {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    -webkit-user-drag: none;
+
+    pointer-events: none;
 }
 
 /* grid limitation */
@@ -109,14 +127,28 @@ section {
     background-size: cover;
 
     width: 100vw;
-    height: 200px;
+    height: 210px;
 
     margin-top: 100px;
+    overflow: hidden;
 }
 
 .logo-footer {
-    position: relative;
-    top: 45px;
-    margin-left: 120px;
-    height: 60%;
+    position: absolute;
+    margin-left: 90px;
+    height: 231px;
+    bottom: 0;
+}
+
+
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fb925b;
+    -webkit-border-radius: 1ex;
 }

@@ -1,0 +1,162 @@
+@media (max-width:1024px) {
+    p {
+        font-size: 1.6rem;
+    }
+
+    .drawer-items {
+        font-size: 4rem;
+    }
+
+    .btn-hero {
+        transform: scale(0.8);
+    }
+
+    .transition {
+        top: 76vh;
+    }
+
+    .close-page-icon {
+        top: 6px;
+        right: 28px;
+    }
+
+    .expositores-cardapio {
+        height: 92%;
+        margin: 0px 50px 30px 30px;
+    }
+
+    .cardapio-item {
+        font-size: 2.3rem;
+    }
+
+    .title-of-section {
+        font-size: 3.6rem;
+        font-weight: 800;
+    }
+
+    .side-menu-text {
+        font-size: 2.6rem;
+    }
+
+    .container-sec-2 .sec-title h1 {
+        font-size: 3rem;
+    }
+
+    .container-grid {
+        max-width: 85vw;
+    }
+
+    .about-me-title {
+        font-size: 3.4rem;
+        width: 230px;
+    }
+
+    .about-me-text {
+        overflow-y: hidden;
+        max-height: 210px;
+    }
+
+    .btn-about-me {
+        padding: 14px 70px;
+        margin-top: 16px;
+    }
+
+    .logo-footer {
+        position: absolute;
+        margin-left: 35px;
+        height: 167px;
+        bottom: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .visible-items {
+        font-size: 1.8rem;
+        display: inline;
+        margin-left: -24px;
+    }
+
+    .transition {
+        top: 78vh;
+    }
+
+    .container-cardapio {
+        height: 60vh;
+    }
+
+    .container-cardapio {
+        margin-top: 0;
+    }
+
+    .cardapio-header {
+        width: 106vw;
+
+        justify-content: left;
+        margin-left: -46px;
+    }
+
+    .cardapio-item {
+        font-size: 1.8rem;
+    }
+
+    .item-card {
+        margin: 25px;
+        min-height: auto;
+    }
+
+    .item-card-img {
+        margin-bottom: 30px;
+    }
+
+    .card-img {
+        width: 215px;
+    }
+
+    .item-card-title h1 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .item-card-price {
+        font-size: 1.5rem;
+    }
+
+    .side-menu-text {
+        font-size: 1.9rem;
+    }
+
+    .side-menu-items {
+        padding: 10px 16px;
+    }
+
+    .side-menu-items.ativo a:hover {
+        font-size: 2rem;
+    }
+
+    .about-me-left {
+        margin-top: -78px;
+    }
+
+    .about-me-title {
+        font-size: 2.6rem;
+        width: 190px;
+    }
+
+    .btn-about-me {
+        padding: 8px 43px;
+        margin-top: 16px;
+        font-size: 1.9rem;
+        text-transform: capitalize;
+    }
+
+    .footer {
+        height: 140px;
+    }
+
+    .logo-footer {
+        height: 120px;
+    }
+
+
+}

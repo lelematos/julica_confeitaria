@@ -124,11 +124,10 @@
     display: flex;
     align-items: center;
     position: absolute;
-    left: calc(50% - 72.116px);
+    left: calc(50% - 94px);
     z-index: 15;
 }
 
 .logo-img {
-    height: 65px;
-
+    height: 188px;
 }

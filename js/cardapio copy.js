@@ -9,13 +9,6 @@ const section_cardapio = document.querySelector('.hiddable-cardapio')
 const btn_hide_or_show = document.querySelector('.btn-hero')
 var hide_or_show_state = true
 
-// var expositor_atual = document.querySelector(".expositores-cardapio[name='0']")
-var lista_de_expositores = document.querySelectorAll('.expositores-cardapio')
-var expositor_atual = document.querySelector(".expositores-cardapio[name='0']")
-let isPressed = false
-let startX
-let scrollLeft
-
 /* functions */
 
 const hideOrShowCardapio = (bool, div_cardapio) => {
@@ -49,22 +42,65 @@ const getThePagesOfTheSelectedMenuItem = (id) => {
     return document.querySelector(`.expositores-cardapio[name='${id}']`)
 }
 
+const getTheContentOfPage = (id, page_number) => {
+    return document.querySelectorAll(`.expositores-cardapio[name='${id}'] .page-${page_number}`)
+}
+
+const changeTheDisplayedPage = (id_sel_from, id_sel_to, page_from, page_to) => {
+    var from_page = getTheContentOfPage(id_sel_from, page_from)
+    var to_page = getTheContentOfPage(id_sel_to, page_to)
+
+    if (to_page[0] !== undefined && from_page[0] !== undefined) {
+        opacityToZero(from_page[0], 'pagina-atual')
+        opacityTo_100(to_page[0], 'pagina-atual')
+    }
+}
+
 const changeGroupOfImages_fromTo_forCardapio = (id_from, id_to) => {
+    // let id_from = document.querySelector(`.expositores-cardapio[name='${id}']`)
     let from_imgs = getThePagesOfTheSelectedMenuItem(id_from)
     let to_imgs = getThePagesOfTheSelectedMenuItem(id_to)
+
+    let id_selecao_from = parseInt(from_imgs.attributes[0].value)
+    let id_selecao_to = parseInt(to_imgs.attributes[0].value)
+
+    changeTheDisplayedPage(id_selecao_from, id_selecao_to, 0, 0)
+
+    //tratando 'pagina-atual' from para que no retorno para esta pagina, não fique com mais de uma atual
+    let pagina_atual_from = document.querySelectorAll(`.expositores-cardapio[name='${id_selecao_to}'] .pagina-atual`)
+    console.log(pagina_atual_from)
+    if (pagina_atual_from.length > 1) {
+        for (var i = 1; i < pagina_atual_from.length; i++) {
+            console.log(pagina_atual_from[i])
+
+            pagina_atual_from[i].classList.remove('pagina-atual')
+        }
+    }
 
     opacityToZero(from_imgs, 'selecionado')
     opacityTo_100(to_imgs, 'selecionado')
 }
 
+// next: increment_value = 1 | previous: increment_value = -1
+const changePages = (increment_value) => {
+    let id_selecao_atual = parseInt(document.querySelector('.selecionado').attributes[0].value)
+
+    let current_page_id = parseInt(document.querySelector(`.expositores-cardapio[name='${id_selecao_atual}'] .pagina-atual`).attributes[0].value)
+    let next_page_id = current_page_id + increment_value
+
+    changeTheDisplayedPage(id_selecao_atual, id_selecao_atual, current_page_id.toString(), next_page_id.toString())
+}
+
 // aplyied on the menu options change event
 const changeCategoryAndPage = (menu_item_index) => {
     let id_from = changeCurrentSelection(menu_item_index)
+    console.log(menu_item_index)
     changeGroupOfImages_fromTo_forCardapio(id_from, menu_item_index)
-    lista_de_expositores[menu_item_index].scrollLeft = lista_de_expositores[menu_item_index].innerWidth
 }
 
-/* - - - - - */
+
+/* - - - - */
+ifCardapioIsHiddenThenShow() // debug
 
 btn_hide_or_show.onclick = () => {
     // invertendo state
@@ -81,42 +117,14 @@ for (var i = 0; i < side_menu_items.length; i++) {
     }
 }
 
-
-/* event listeners */
-for (var i = 0; i < lista_de_expositores.length; i++) {
-    let y = i
-    lista_de_expositores[i].addEventListener('mousedown', (e) => {
-        isPressed = true
-        lista_de_expositores[y].classList.add('dragging')
-        startX = e.pageX - lista_de_expositores[y].offsetLeft
-        scrollLeft = lista_de_expositores[y].scrollLeft
-    })
-    lista_de_expositores[y].addEventListener('mouseleave', () => {
-        isPressed = false
-        lista_de_expositores[y].classList.remove('dragging')
-    })
-    lista_de_expositores[y].addEventListener('mouseup', () => {
-        isPressed = false
-        lista_de_expositores[y].classList.remove('dragging')
-    })
-
-    lista_de_expositores[i].addEventListener('mousemove', (e) => {
-        if (!isPressed) return
-        e.preventDefault()
-        let atualX = e.pageX - lista_de_expositores[y].offsetLeft
-
-        deslocamentoX = atualX - startX
-        lista_de_expositores[y].scrollLeft = scrollLeft - 1.4 * deslocamentoX
-    })
-}
-
 next_btn.onclick = () => {
-    let deslocamentoX_desejado = window.innerWidth
-    expositor_atual.scrollLeft += deslocamentoX_desejado
+    var increment = 1
+    changePages(increment)
 }
+
 previous_btn.onclick = () => {
-    let deslocamentoX_desejado = window.innerWidth
-    expositor_atual.scrollLeft -= deslocamentoX_desejado
+    var increment = -1
+    changePages(increment)
 }
 
 cardapio_close_btn.onclick = () => {
