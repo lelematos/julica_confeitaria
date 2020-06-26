@@ -96,7 +96,7 @@
     }
 
     .cardapio-item {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .item-card {
@@ -176,9 +176,66 @@
         top: 87vh;
     }
 
+    .close-page-icon {
+        top: -7px;
+        right: 0px;
+    }
+
+    .close-page-icon a {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        background-color: #FB925B;
+        border-radius: 33%;
+    }
+
+    .cardapio-header {
+        width: 100vw;
+        justify-content: inherit;
+        margin-left: 0;
+    }
+
+    .cardapio-items {
+        flex-direction: column;
+    }
+
+    .cardapio-items li {
+        margin-left: 0;
+        line-height: 50px;
+    }
+
+    .cardapio-item {
+        display: inline-block;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .item-ativo {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .container-cardapio {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expositores-cardapio {
+        height: auto;
+        margin: 0px 0 30px 0px;
+    }
+
+    .item-card {
+        margin: 25px 20px;
+        min-height: 338px;
+    }
+
     .title-of-section {
         font-size: 2.6rem;
     }
+
 
     .container-sec-1 {
         margin: 0px;
@@ -197,10 +254,21 @@
         margin: 0;
     }
 
+    .side-menu-text {
+        font-size: 1.9rem;
+        display: inline-block;
+        width: 100vw;
+        text-align: center;
+    }
+
     .side-menu {
         background-color: #FFD3BD;
         position: relative;
         width: auto;
+    }
+
+    .side-menu-items {
+        padding: 10px 0px;
     }
 
     .expositor-de-imagens {
@@ -276,5 +344,4 @@
     .side-by-side-text li p {
         font-size: 1.2rem;
     }
-
 }
