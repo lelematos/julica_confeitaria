@@ -15,7 +15,7 @@ var initial_state = Array.from(navbar_background_div.classList);
 /* ---------------------------- functions -------------------------------- */
 
 const changeColorAccordingToPosition = () => {
-    if (window.scrollY === 0) {
+    if ((window.scrollY === 0) && (Array.from(drawer_div.classList).includes('close'))) {
         ChangeColors_FromTo(navbar_background_div, 'colored', 'transparent');
 
         /* cor do drawer-icon */
