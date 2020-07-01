@@ -220,6 +220,19 @@
         margin: 8px;
     }
 
+    .drawer-content {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--cor-de-fundo);
+        padding-left: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 510px;
+    }
+
     .logo-img {
         height: 140px;
     }
@@ -448,6 +461,20 @@
 @media (max-width: 320px) {
     .transition {
         top: 47vh;
+    }
+
+    .container-logo {
+        z-index: 2;
+    }
+
+    .drawer-items {
+        font-size: 3rem;
+    }
+
+    .drawer-content {
+        padding-left: 10px;
+        height: 320px;
+        top: 76px;
     }
 
     .logo-footer {
