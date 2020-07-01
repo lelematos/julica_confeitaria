@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .transparent {
@@ -131,3 +132,23 @@
 .logo-img {
     height: 188px;
 }
+
+/* social media */
+
+.social-medias {
+    margin-right: 40px;
+}
+
+.social-medias ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-link {
+    margin: 20px;
+}
+
+/* .social-media-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+} */

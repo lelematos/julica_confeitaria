@@ -12,6 +12,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" type="text/css" href="styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -24,50 +34,66 @@
     <div class="wrapper">
         <nav>
             <div class="container-navbar transparent">
-                <div class="container-drawer">
-                    <div class="icons">
-                        <a href="#!" class='drawer-icon-clicable'>
-                            <svg class='drawer-icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M23.244 18.4273L24 20.8854L23.352 21.1886C19.7297 22.9482 15.8871 23.8999 12 24C7.88097 23.8826 3.81396 22.827 0 20.8854L0.756 18.4273L1.37016 18.7145C4.76128 20.368 8.35931 21.266 12 21.3675C15.8605 21.2487 19.671 20.2523 23.244 18.4273ZM12 2.94046C8.13953 2.82159 4.32898 1.82508 0.756 0L0 2.45804C3.81396 4.39968 7.88097 5.45528 12 5.57266C16.119 5.45528 20.186 4.39968 24 2.45804L23.244 0C19.671 1.82508 15.8605 2.82159 12 2.94046ZM12 12.1541C8.35939 12.0526 4.76144 11.1546 1.3704 9.50115L0.756 9.21367L0 11.6711C3.81396 13.6128 7.88097 14.6684 12 14.7857C15.8871 14.6856 19.7297 13.7339 23.352 11.9743L24 11.6711L23.244 9.21307C19.671 11.0383 15.8605 12.0349 12 12.1538V12.1541Z"
-                                    fill="" />
-                            </svg>
-                        </a>
-                        <a href="#!" class='x-icon-clicable'>
-                            <svg class='x-icon' width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.5 1.7667L11.2668 10.0005L19.5 18.2333L18.2333 19.5L10 11.267L1.7667 19.5L0.5 18.2333L8.733 10.0005L0.5 1.7667L1.7667 0.5L10 8.7332L18.2333 0.5L19.5 1.7667Z"
-                                    fill="#FB925B" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="drawer-content">
-                        <ul class="drawer">
-                            <li><a href='#!' class="drawer-items kits-link">Kits personalizados</a></li>
-                            <li><a href='#!' class="drawer-items bolos-link">Bolos</a></li>
-                            <li><a href='#!' class="drawer-items tortas-link">Tortas</a></li>
-                            <li><a href='#!' class="drawer-items doces-link">Doces</a></li>
-                            <li><a href='#!' class="drawer-items about-link">Sobre Mim</a></li>
-                            <li><a href='#!' class="drawer-items depoimentos-link">Depoimentos</a></li>
-                        </ul>
-                        <div class="container-imgs">
-                            <img src="imagens/89121087_137628491123751_278155715112052360_n.jpg" alt=""
-                                class="drawer-images">
-                            <img src="imagens/82646782_190499835368773_3071692700984210423_n.jpg" alt=""
-                                class="drawer-images">
+                <div style='display:flex; flex-direction: row;'>
+                    <div class="container-drawer">
+                        <div class="icons">
+                            <a href="#!" class='drawer-icon-clicable'>
+                                <svg class='drawer-icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.244 18.4273L24 20.8854L23.352 21.1886C19.7297 22.9482 15.8871 23.8999 12 24C7.88097 23.8826 3.81396 22.827 0 20.8854L0.756 18.4273L1.37016 18.7145C4.76128 20.368 8.35931 21.266 12 21.3675C15.8605 21.2487 19.671 20.2523 23.244 18.4273ZM12 2.94046C8.13953 2.82159 4.32898 1.82508 0.756 0L0 2.45804C3.81396 4.39968 7.88097 5.45528 12 5.57266C16.119 5.45528 20.186 4.39968 24 2.45804L23.244 0C19.671 1.82508 15.8605 2.82159 12 2.94046ZM12 12.1541C8.35939 12.0526 4.76144 11.1546 1.3704 9.50115L0.756 9.21367L0 11.6711C3.81396 13.6128 7.88097 14.6684 12 14.7857C15.8871 14.6856 19.7297 13.7339 23.352 11.9743L24 11.6711L23.244 9.21307C19.671 11.0383 15.8605 12.0349 12 12.1538V12.1541Z"
+                                        fill="" />
+                                </svg>
+                            </a>
+                            <a href="#!" class='x-icon-clicable'>
+                                <svg class='x-icon' width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.5 1.7667L11.2668 10.0005L19.5 18.2333L18.2333 19.5L10 11.267L1.7667 19.5L0.5 18.2333L8.733 10.0005L0.5 1.7667L1.7667 0.5L10 8.7332L18.2333 0.5L19.5 1.7667Z"
+                                        fill="#FB925B" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="drawer-content">
+                            <ul class="drawer">
+                                <li><a href='#!' class="drawer-items kits-link">Kits personalizados</a></li>
+                                <li><a href='#!' class="drawer-items bolos-link">Bolos</a></li>
+                                <li><a href='#!' class="drawer-items tortas-link">Tortas</a></li>
+                                <li><a href='#!' class="drawer-items doces-link">Doces</a></li>
+                                <li><a href='#!' class="drawer-items about-link">Sobre Mim</a></li>
+                                <li><a href='#!' class="drawer-items depoimentos-link">Depoimentos</a></li>
+                            </ul>
+                            <div class="container-imgs">
+                                <img src="imagens/89121087_137628491123751_278155715112052360_n.jpg" alt=""
+                                    class="drawer-images">
+                                <img src="imagens/82646782_190499835368773_3071692700984210423_n.jpg" alt=""
+                                    class="drawer-images">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <ul class="container-visible-items">
-                    <li><a href='#!' class="visible-items">Sobre Mim</a></li>
-                </ul>
+                    <ul class="container-visible-items">
+                        <li><a href='#!' class="visible-items">Sobre Mim</a></li>
+                    </ul>
+                </div>
                 <div class="container-logo">
                     <a href="#!" class="logo-link">
                         <img src="imagens/Logo-Julica branco.svg" alt="logo da julica" class="logo-img">
                     </a>
+                </div>
+                <div class="social-medias">
+                    <ul style='z-index:45;position: relative;'>
+                        <a href="https://www.instagram.com/julicaconfeitaria/" class="social-media-link">
+                            <li class="social-media-icon">
+                                <img class='insta-icon' src="imagens/instagram white.svg" alt="">
+                            </li>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5511956589800" class="social-media-link">
+                            <li class="social-media-icon">
+                                <img class='whats-icon' src="imagens/whatsapp white.svg" alt="">
+                            </li>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -660,7 +686,7 @@
                                 libero animi fugiat ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Dolor
                             </p>
-                            <a href="#!" class="primary-button btn-white btn-about-me">Ver mais</a>
+                            <a href="#!" class="primary-button btn-purple btn-about-me">Ver mais</a>
                         </div>
                         <div class="about-me-img">
                             <img src="imagens/82378771_636596460214144_8201159220621048693_n.jpg" alt="">
@@ -671,6 +697,46 @@
             <footer>
                 <div class="footer">
                     <img class='logo-footer' src="imagens/meu-svg.svg" alt="">
+                    <svg class='svg-background' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#3B1F2B" fill-opacity="1"
+                            d="M0,96L48,96C96,96,192,96,288,101.3C384,107,480,117,576,149.3C672,181,768,235,864,229.3C960,224,1056,160,1152,133.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                        </path>
+                    </svg>
+                    <p class='copyright'>Copyright © 2020 - Julica Confeitaria Artesanal <br> Desenvolvido por Leandro
+                        Castro</p>
+                    <ul class='media-container-footer'>
+                        <a href="https://www.instagram.com/julicaconfeitaria/" class="social-media-link">
+                            <li class="social-media-icon-footer">
+                                <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" width='3rem'
+                                    height='3rem' viewBox="0 0 512 512" xml:space="preserve" fill='#fb925b'
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path
+                                            d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z" />
+                                        <path
+                                            d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z" />
+                                        <path
+                                            d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z" />
+                                    </g>
+                                </svg>
+                            </li>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5511956589800" class="social-media-link">
+                            <li class="social-media-icon-footer">
+                                <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1"
+                                    viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width='3rem' height='3rem'
+                                    fill='#fb925b'>
+                                    <g>
+                                        <path
+                                            d="M10.8,507.9c6.9-20.7,13.4-40.1,19.9-59.5c6.5-19.2,12.3-38.7,19.7-57.6c3.8-9.6,2.6-16.8-2.2-25.8   c-26.2-48.6-34-100.7-24.9-154.9c7.7-45.9,27.2-86.5,58.7-121C133.9,32.4,198.7,5.2,275.3,8.4c56.1,2.3,105.7,22.8,148,59.9   c39.4,34.5,65.1,77.4,77,128.4c9.6,41.1,8.5,82-3.3,122.5c-15,51.3-43.7,93.6-86.4,125.8c-59.3,44.8-125.8,58.7-198.3,44.6   c-21.8-4.2-42.6-12-62.2-22.6c-3.2-1.7-5.9-2.1-9.4-0.9c-37.2,12-74.5,23.9-111.7,35.8C23.4,503.7,17.7,505.6,10.8,507.9z    M74.1,445.2c2-0.5,2.9-0.7,3.8-1c23.3-7.4,46.6-14.9,70-22.1c2.2-0.7,5.2-0.1,7.3,0.9c10.1,5,19.8,11,30.2,15.4   c42.8,18.1,86.9,21,131.5,8.6c53.2-14.9,94-46.6,121.9-94.5c23.9-41,32.1-85.3,24.7-131.9c-9.4-59.3-39.8-105.9-90.1-139   C329.8,53,281.8,43.3,230.6,51.4c-44.1,7-81.8,27.1-112.9,59.3c-26.7,27.6-44.6,60.2-52.4,97.7c-11.1,53.7-2.9,104.5,26.9,150.8   c6,9.3,5.8,16.4,2.2,25.9C87.1,404.6,81,424.5,74.1,445.2z" />
+                                        <path
+                                            d="M389.3,321.8c-0.3,19.3-9.4,34-27.8,43.2c-18.1,9-36.5,11.3-55.4,3.9c-17-6.7-34.2-13.2-50.6-21.3   c-21.6-10.7-39.3-26.7-55.5-44.4c-17.9-19.6-33.1-41.4-45.6-64.7c-8.9-16.5-14.3-34-12.4-53.2c2-20.4,11.5-36.7,27.5-49   c3.2-2.4,8-3.5,12.1-3.9c5.3-0.4,10.6,0.4,15.9,0.8c4.4,0.4,6.8,3.5,8.3,7.1c3.9,9.6,7.4,19.2,11.1,28.9c2.5,6.5,4.4,13.3,7.4,19.6   c3.7,7.8,1.4,14.3-3.4,20.3c-4.1,5.1-8.4,10-13.1,14.4c-3.9,3.7-4.6,7.5-2,12c11.5,20.5,25.5,38.9,44,53.8   c12.2,9.8,25.7,17.1,39.7,23.9c4.1,2,8.1,1.7,11.3-2c6.9-7.9,13.9-15.7,20.7-23.7c4.4-5.1,6.6-6.1,12.5-3.1   c17.1,8.6,34,17.5,51,26.4C389,313,390,316.6,389.3,321.8z" />
+                                    </g>
+                                </svg>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
             </footer>
         </div>

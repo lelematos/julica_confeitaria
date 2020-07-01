@@ -5,6 +5,9 @@ var navbar_background_div = document.querySelector('.container-navbar');
 var visible_menu_items = document.querySelectorAll('.visible-items');
 var logo = document.querySelector('.logo-img');
 
+const intagram_icon = document.querySelector('.insta-icon');
+const whatsapp_icon = document.querySelector('.whats-icon');
+
 var initial_state = Array.from(navbar_background_div.classList);
 
 
@@ -43,12 +46,16 @@ const OrangeToWhiteMenuItems = () => {
         ChangeColors_FromTo(visible_menu_items[i], 'laranja', 'light');
     }
     logo.setAttribute('src', "imagens/Logo-Julica branco.svg");
+    intagram_icon.setAttribute('src', "imagens/instagram white.svg");
+    whatsapp_icon.setAttribute('src', "imagens/whatsapp white.svg");
 }
 const WhiteToOrangeMenuItems = () => {
     for (var i = 0; i < visible_menu_items.length; i++) {
         ChangeColors_FromTo(visible_menu_items[i], 'light', 'laranja');
     }
     logo.setAttribute('src', "imagens/Logo-Julica.svg");
+    intagram_icon.setAttribute('src', "imagens/instagram orange.svg");
+    whatsapp_icon.setAttribute('src', "imagens/whatsapp orange.svg");
 }
 
 const openNavMenu = () => {
