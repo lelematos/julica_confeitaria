@@ -218,8 +218,7 @@
     }
 
     .transition {
-        bottom: 337vh;
-        top: auto;
+        top: 86vh;
     }
 }
 
@@ -254,7 +253,7 @@
     }
 
     .transition {
-        top: 87vh;
+        top: 89vh;
     }
 
     .close-page-icon {
@@ -414,7 +413,7 @@
     }
 
     .transition {
-        top: 46vh;
+        top: 48vh;
     }
 
     .container-drawer {
@@ -468,7 +467,7 @@
 
 @media (max-width: 320px) {
     .transition {
-        top: 47vh;
+        top: 49vh;
     }
 
     .container-logo {
