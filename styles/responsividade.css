@@ -211,6 +211,18 @@
 
 }
 
+@media (max-width:638px) {
+
+    .container-visible-items {
+        display: none;
+    }
+
+    .transition {
+        bottom: 337vh;
+        top: auto;
+    }
+}
+
 @media(max-width:425px) {
     .social-medias {
         margin-right: 10px;
@@ -239,10 +251,6 @@
 
     .container-logo {
         left: calc(50% - 70px);
-    }
-
-    .container-visible-items {
-        display: none;
     }
 
     .transition {
