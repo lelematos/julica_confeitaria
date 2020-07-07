@@ -1,32 +1,27 @@
-// var title_sections1_top = document.querySelector('.title-of-section').getBoundingClientRect()["y"] //getting the y coordinate of the element
+const transition_element = document.querySelector('.transition')
+const hero_image = document.querySelector('.container-hero')
 
-var start_fix_position_of_first_title = 100.2833251953125;
-var finish_fix_position_of_first_title = -700;
+var c_hero, c_transition
 
 /* ---------------------------- functions -------------------------------- */
 
-const updatePositionOfTheElement = (element_class, x_or_y) => {
-    let position = document.querySelector(element_class).getBoundingClientRect()[x_or_y]
-    return position
+const updateSubtractionOfElementHeights = (add_value) => {
+    c_hero = hero_image.clientHeight
+    c_transition = transition_element.clientHeight
+    return c_hero - c_transition + add_value
 }
 
-const fixingElement = (element_class) => {
-    document.querySelector(element_class).classList.add('fixed');
+const applyTheTransitionHeight = (add_value) => {
+    transition_element.setAttribute('style', `top: ${updateSubtractionOfElementHeights(add_value)}px !important;`)
 }
 
-const unfixingElement = (element_class) => {
-    document.querySelector(element_class).classList.remove('fixed');
-}
+// /* ----------------------------------------------------------------------- */
 
-/* ----------------------------------------------------------------------- */
+var add_value = window.innerWidth * 0.05
 
-window.onscroll = () => {
-    let title_1_position = updatePositionOfTheElement('.title-of-section', 'y');
-    console.log(title_1_position)
-    if (title_1_position === start_fix_position_of_first_title) {
-        fixingElement('.title-of-section');
-    }
-    if (title_1_position === finish_fix_position_of_first_title) {
-        unfixingElement('.title-of-section');
-    }
+applyTheTransitionHeight(add_value)
+
+window.onresize = () => {
+    add_value = window.innerWidth * 0.05
+    applyTheTransitionHeight(add_value)
 }

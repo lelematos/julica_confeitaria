@@ -17,10 +17,6 @@
         transform: scale(0.8);
     }
 
-    .transition {
-        top: 76vh;
-    }
-
     .close-page-icon {
         top: 6px;
         right: 28px;
@@ -50,6 +46,15 @@
 
     .container-grid {
         max-width: 85vw;
+    }
+
+    .card-depoimento {
+        width: 35vw !important;
+    }
+
+    .card-dep-text {
+        padding: 0px 15px;
+        margin: 20px 10px 0px 10px;
     }
 
     .about-me-title {
@@ -93,10 +98,6 @@
         font-size: 1.8rem;
         display: inline;
         margin-left: -24px;
-    }
-
-    .transition {
-        top: 78vh;
     }
 
     .container-cardapio {
@@ -151,6 +152,34 @@
 
     .side-menu-items.ativo a:hover {
         font-size: 2rem;
+    }
+
+    .title-depoimentos {
+        padding: 15px;
+        top: -40px;
+        /* left: 55px; */
+    }
+
+    .card-dep-header {
+        position: relative;
+        left: 5px;
+    }
+
+    h1.nome-depoimento {
+        font-size: 2.2rem;
+    }
+
+    .card-depoimento {
+        width: 40vw !important;
+        padding: 10px;
+    }
+
+    .card-dep-text {
+        margin: 20px 4px 0px 4px;
+    }
+
+    p.text-depoimento {
+        font-size: 1.4rem;
     }
 
     .about-me-left {
@@ -212,13 +241,8 @@
 }
 
 @media (max-width:638px) {
-
     .container-visible-items {
         display: none;
-    }
-
-    .transition {
-        top: 86vh;
     }
 }
 
@@ -250,10 +274,6 @@
 
     .container-logo {
         left: calc(50% - 70px);
-    }
-
-    .transition {
-        top: 89vh;
     }
 
     .close-page-icon {
@@ -359,6 +379,36 @@
         margin-top: 0;
     }
 
+    .container-depoimentos {
+        height: 245px;
+        margin: 100px 0 40px 0;
+    }
+
+    .title-depoimentos {
+        left: calc(50% - 83.5px);
+    }
+
+    .title-depoimentos h1 {
+        font-size: 2.2rem;
+    }
+
+    .card-depoimento {
+        width: 75vw !important;
+        padding: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 13vw !important;
+        bottom: auto;
+        top: 50% !important;
+    }
+
+    .swiper-button-next {
+        right: 13vw !important;
+        bottom: auto;
+        top: 50% !important;
+    }
+
     .about-me {
         display: flex;
         flex-direction: column;
@@ -412,10 +462,6 @@
         top: 34vh;
     }
 
-    .transition {
-        top: 48vh;
-    }
-
     .container-drawer {
         padding: 20px 40px 40px 25px;
     }
@@ -439,6 +485,31 @@
 
     .side-by-side-text li p {
         font-size: 1.2rem;
+    }
+
+    .title-depoimentos {
+        padding: 12px;
+        top: -28px;
+    }
+
+    .card-depoimento {
+        max-height: 215px;
+    }
+
+    .card-dep-text {
+        margin: 10px 4px 0px 4px;
+    }
+
+    h1.nome-depoimento {
+        font-size: 1.8rem;
+    }
+
+    p.text-depoimento {
+        font-size: 1.2rem;
+    }
+
+    a.link-depoimento {
+        font-size: 1rem;
     }
 
     .svg-background {
@@ -466,9 +537,6 @@
 }
 
 @media (max-width: 320px) {
-    .transition {
-        top: 49vh;
-    }
 
     .container-logo {
         z-index: 2;
@@ -482,6 +550,18 @@
         padding-left: 10px;
         height: 320px;
         top: 76px;
+    }
+
+    .container-depoimentos {
+        padding: 30px 40px 10px 40px;
+    }
+
+    .swiper-button-prev {
+        left: 14vw !important;
+    }
+
+    .swiper-button-next {
+        right: 14vw !important;
     }
 
     .logo-footer {

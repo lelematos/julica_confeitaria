@@ -30,7 +30,8 @@
 .transition {
     position: absolute;
 
-    top: 65vh;
+    /* top: 65vh; */
+    top: 623px;
     width: 100%;
 
     z-index: 4;
@@ -379,6 +380,130 @@
     display: inherit !important;
 }
 
+/* depoimentos */
+
+.swiper-container {
+    left: -40px !important;
+}
+
+/* .swiper-container {
+    left: -28px !important;
+} */
+
+.title-depoimentos {
+    background-color: var(--dark-purple);
+
+    border-radius: 4px;
+
+    width: auto;
+    padding: 20px;
+
+    position: absolute;
+    top: -40px;
+    left: 10vw;
+}
+
+.title-depoimentos h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.container-depoimentos {
+    width: 100vw;
+    height: 350px;
+
+    background-color: #fb925b;
+
+    margin: 200px 0 100px 0;
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    overflow: visible !important;
+}
+
+.card-depoimento {
+    width: 30vw !important;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FFD3BD;
+    margin: 0 30px;
+
+    border-radius: 10px;
+}
+
+.card-dep-header {
+    position: relative;
+    left: 15px;
+    width: 125px;
+    padding: 5px 15px;
+    background-color: var(--dark-purple);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px chocolate;
+}
+
+h1.nome-depoimento {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.card-dep-text {
+    border: 3px solid var(--dark-purple);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 14px 0px 14px;
+}
+
+.card-dep-link {
+    margin-left: auto;
+    position: relative;
+    float: right;
+    margin-bottom: 5px;
+}
+
+a.link-depoimento {
+    text-decoration: underline;
+    color: #0779e4;
+    font-size: 1.4rem;
+}
+
+.swiper-slide-next {
+    opacity: 0.6;
+}
+
+.swiper-slide-prev {
+    opacity: 0.6;
+}
+
+.swiper-button-next {
+    right: 45vw !important;
+}
+
+.swiper-button-prev {
+    left: 45vw !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 2rem !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    bottom: 1%;
+    top: auto !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--dark-purple) !important;
+}
 
 /* about me */
 
