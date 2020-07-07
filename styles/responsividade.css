@@ -4,6 +4,17 @@
     }
 }
 
+@media (max-width:1366px) {
+    p.about-me-text {
+        max-height: 327px;
+        overflow-y: hidden;
+    }
+
+    .item-card-img {
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width:1024px) {
     p {
         font-size: 1.6rem;
@@ -98,6 +109,14 @@
         font-size: 1.8rem;
         display: inline;
         margin-left: -24px;
+    }
+
+    .close-page-icon {
+        margin-right: 22px;
+    }
+
+    .expositores-cardapio {
+        margin: 0px 0px 30px 0px;
     }
 
     .container-cardapio {
@@ -244,41 +263,11 @@
     .container-visible-items {
         display: none;
     }
-}
-
-@media(max-width:425px) {
-    .social-medias {
-        margin-right: 10px;
-    }
-
-    .social-media-link {
-        margin: 8px;
-    }
-
-    .drawer-content {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: var(--cor-de-fundo);
-        padding-left: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 510px;
-    }
-
-    .logo-img {
-        height: 140px;
-    }
-
-    .container-logo {
-        left: calc(50% - 70px);
-    }
 
     .close-page-icon {
         top: -7px;
-        right: 0px;
+        right: -20px;
+        position: absolute;
     }
 
     .close-page-icon a {
@@ -330,6 +319,37 @@
     .item-card {
         margin: 25px 20px;
         min-height: 338px;
+    }
+}
+
+@media(max-width:425px) {
+    .social-medias {
+        margin-right: 10px;
+    }
+
+    .social-media-link {
+        margin: 8px;
+    }
+
+    .drawer-content {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--cor-de-fundo);
+        padding-left: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 510px;
+    }
+
+    .logo-img {
+        height: 140px;
+    }
+
+    .container-logo {
+        left: calc(50% - 70px);
     }
 
     .title-of-section {
@@ -588,5 +608,21 @@
     .social-media-link {
         margin: 0;
         margin-right: 10px;
+    }
+}
+
+@media (max-height: 697px) {
+    .card-img {
+        width: 230px;
+    }
+}
+
+@media (max-height: 611px) {
+    .cardapio-content {
+        height: 92%;
+    }
+
+    .close-page-icon {
+        top: -8px;
     }
 }

@@ -23,6 +23,7 @@
     top: 58vh;
     justify-content: space-around;
     left: calc(50% - 122.3px);
+    z-index: 100;
 }
 
 /* transition */
@@ -68,12 +69,8 @@
 }
 
 .close-page-icon {
-    position: absolute;
-    top: 10px;
-    right: 50px;
-
     padding: 10px;
-
+    margin-right: 35px;
 }
 
 .container-cardapio {
@@ -103,7 +100,7 @@
 
 .cardapio-content {
     width: 100vw;
-    height: 90%;
+    height: 100%;
 }
 
 .cardapio-items {
@@ -112,6 +109,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .cardapio-items li {
@@ -148,9 +146,9 @@
     display: none;
     flex-direction: row;
 
-    height: 90%;
+    height: 96%;
 
-    margin: 30px 50px 30px 30px;
+    margin: 0px 50px 0px 30px;
 
     overflow-x: scroll;
     -ms-overflow-style: none;
@@ -169,28 +167,14 @@
     display: flex;
 }
 
-.page {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    margin: 0 auto;
-
-    display: none;
-}
-
 .last-item {
     margin-right: 200px;
-}
-
-.pagina-atual {
-    display: inherit;
 }
 
 .item-card {
     margin: 40px;
 
-    min-height: 482px;
+    min-height: 60vh;
 
     background-color: white;
     border-radius: 10px;
@@ -226,6 +210,11 @@
 
     font-size: 1.8rem;
     color: white;
+}
+
+
+.item-card-title {
+    text-align: center;
 }
 
 /* content */

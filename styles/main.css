@@ -52,11 +52,11 @@ ul {
     list-style: none;
 }
 
-section {
+/* section {
     z-index: 4;
     position: relative;
 
-}
+} */
 
 .invisible,
 .close {
